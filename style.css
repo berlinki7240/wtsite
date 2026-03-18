@@ -1,4 +1,6 @@
-
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 img{
     width: 250px;
     height: 250px;
@@ -7,12 +9,14 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 70%;
-    height: 1000px;
+    width: 65%;
+    height: 750px;
     border: 10px solid black;
     border-radius: 50px;
     overflow-y: auto;
     scrollbar-width: auto;
+    background-color: #243447;
+    
 }
 
 .flexbox{
@@ -20,13 +24,31 @@ main{
     margin: 5px;
     border: 5px solid black;
     border-radius: 15px;
+    background-color: #1c2b3a;
+    
 }
 h1,h2,h3{
     text-align: center;
-    font-size: 100%;
+    font-size: 90%;
     font-size: larger;
 }
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/images/gojda.png");
+    background-size: cover;
+}
+
+.flexbox h2,h3{
+    font-size: 70%;
+}
+nav{
+    background-color: black;
+    color: #4a9ebb;
+    margin-bottom: 20px;
+    width: auto;
+}
+header{
+    color: white;
 }
