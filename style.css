@@ -41,7 +41,6 @@ body{
 nav{
     color: black;
     margin-bottom: 20px;
-    width: auto;
     font-size: larger;
     font-weight: 700;
     border: 3px solid black;
@@ -49,8 +48,8 @@ nav{
     margin-top: 15px;
     padding: 5px;
     border-radius: 5px;
-    width: 1000px;
     text-align: center;
+    width: 400px;
 }
 header{
     color: rgb(240, 235, 235);;
@@ -100,4 +99,16 @@ input{
 #searchDiv p{
     color: white;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.flexbox {
+    transition: 0.2s, 0.2s;  
+    cursor: pointer;
+}
+.flexbox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
