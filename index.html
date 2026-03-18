@@ -12,7 +12,27 @@
         
     </header>
     <nav><p>This site gives overall explanations of important positions on maps, cheesy spots, free kill zones and everything to make you better at the game</p>
-        <p>Click On the map images, scroll or use search function to select desired map you wish to learn about</p></nav>
+        <p>Click On the map images, scroll or use search function to select desired map you wish to learn about</p>
+    </nav>
+    <div id="searchDiv">
+        <p>Search:</p><input type="text" id="searchInput" placeholder="Search maps..." onkeyup="searchMaps()">
+        <script>
+    function searchMaps() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.flexbox');
+
+    cards.forEach(card => {
+        const heading = card.querySelector('h1, h2, h3').textContent.toLowerCase();
+        if (heading.includes(input)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+        </script>
+        </div>
     <div id="wrapper">
         <main>
         
